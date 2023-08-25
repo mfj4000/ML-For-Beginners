@@ -1,12 +1,3 @@
-[![GitHub license](https://img.shields.io/github/license/microsoft/ML-For-Beginners.svg)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/blob/master/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/ML-For-Beginners.svg)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/microsoft/ML-For-Beginners.svg)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/issues/)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/ML-For-Beginners.svg)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/pulls/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/ML-For-Beginners.svg?style=social&label=Watch)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/watchers/)
-[![GitHub forks](https://img.shields.io/github/forks/microsoft/ML-For-Beginners.svg?style=social&label=Fork)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/network/)
-[![GitHub stars](https://img.shields.io/github/stars/microsoft/ML-For-Beginners.svg?style=social&label=Star)](https://github.com/SMC-AAU-CPH/ML-For-Beginners/stargazers/)
 
 # Machine Learning for Beginners - A Curriculum
 
@@ -20,9 +11,9 @@ Travel with us around the world as we apply these classic techniques to data fro
 
 # Getting Started
 
-**T**o use this curriculum out of the box, visit the AAU JupyterHub (link at Moodle).
+**Experimental:** To use this curriculum out of the box, log in with your github account to this repo, press . or go directly to https://github.dev/SMC-AAU-CPH/ML-For-Beginners. More instructions at the first lesson.
 
-You can also *fork* the entire repo and complete the exercises on your own or with a group.
+**Preferred:** *Fork* the entire repo and complete the exercises on your own or with a group on VS Code.
 
 In any case
 
@@ -32,11 +23,17 @@ In any case
 - Take the post-lecture quiz.
 - Complete the challenge.
 - Complete the assignment.
-- Submit it to via JupyterHub (we can also try [Github Classroom](https://classroom.github.com/classrooms/10246029-med7-mlme-22) as a pull request).
+- Submit it to Moodle.
 
 > For further study, we recommend following the link to the [Microsoft Learn](https://docs.microsoft.com/en-us/users/jenlooper-2911/collections/k7o7tg1gp306q4?WT.mc_id=academic-15963-cxa) modules and learning paths.
 
 ---
+
+## Video walkthroughs
+
+Some of the lessons are available as short form video. You can find all these in-line in the lessons, or on the [ML for Beginners playlist on the Microsoft Developer YouTube channel](https://aka.ms/ml-beginners-videos) by clicking the image below.
+
+[![ML for beginners banner](https://github.com/microsoft/ML-For-Beginners/raw/main/ml-for-beginners-video-banner.png)](https://aka.ms/ml-beginners-videos)
 
 ## Meet the Microsoft Team
 
@@ -73,19 +70,18 @@ Find Microsoft's' [Code of Conduct](CODE_OF_CONDUCT.md), [Contributing](CONTRIBU
 
 Below is a preliminary schedule, which mainly follows Microsoft's ML for beginners, from our own fork at [https://github.com/SMC-AAU-CPH/ML-For-Beginners](https://github.com/SMC-AAU-CPH/ML-For-Beginners)
 
-| **Sec** | **Date**   | **Theory**           | **Teacher** | **Lesson Group**                                                                  | **Lessons** | **Learning objectives addressed**                                                                                   |
-| ------------- | ---------------- | -------------------------- | ----------------- | --------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1             | <2022-09-02 Fri> | [Introduction]()              | Cumhur            | [Introduction](1-Introduction/README.md)                                                   | 1-4               | Multivariate statistics                                                                                                   |
-| 2             | <2022-09-08 Thu> | Supervised Learning I      | Cumhur            | [Regression](2-Regression/README.md)                                                       | 5-8               | Least-squares, ANN after[AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/3-NeuralNetworks) |
-| 3             | <2022-09-15 Thu> | Supervised learning II     | George            | [Classification](4-Classification/README.md)                                               | 10-12             | Bayesian, parametric, non-parametric, CNNs                                                                                |
-| 4             | <2022-09-22 Thu> | Unsupervised Learning I    | George            | [Clustering](5-Clustering/README.md) & Vizualization                                       | 14-15             | k-means, GMMs, PCA, autoencoder                                                                                           |
-| 5             | <2022-09-29 Thu> | Unsupervised Learning II   | George            | Procedural Cont. Gen and[NLP](6-NLP/README.md)                                             | 16-20             | Context and application                                                                                                   |
-| 7             | <2022-10-06 Thu> | Reinforcement Learning     | Henrique          | [Reinforcement learning](8-Reinforcement/README)                                           | 24,25             | Q-learning, Gym                                                                                                           |
-| 8             | <2022-10-13 Thu> | Workshop I: Deployment     | Cumhur            | [WebApp](3-Web-App/README.md), [gradio](https://gradio.app/), [streamlit](https://streamlit.io/) | 9,13              | Application to media                                                                                                      |
-| 9             | <2022-11-03 Thu> | Real-world, EU regulations | Cumhur            | [ML in the Wild](9-Real-World/README.md), with T. Bjørner                                 |                   | Social aspects (from last year)                                                                                           |
-| 10            | <2022-11-10 Thu> | Time-series analysis ?     | Henrique          | [Time series](8-TimeSeries/README.md) / own research                                       | 21-23             | E.g., movement {Geleijn:2021ds}                                                                                           |
-| 11            | <2022-11-17 Thu> | Workshop II: mini-projects | Cumhur            | And a Guest                                                                             |                   |                                                                                                                           |
-| 12            | <2022-11-24 Thu> | Wrap up, mini-projects     | ALL               | If needed!                                                                              |                   |                                                                                                                           |
+| **Sec** | **Date**    | **Theory**         | **Lesson Group**                                                                  | **Lessons** | **Learning objectives addressed**                                                                                   |
+| ------------- | ----------------- | ------------------------ | --------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 1             | <2023-09-07 Thu> | [Introduction]()            | [Introduction](1-Introduction/README.md)                                                   | 1-4               | Multivariate statistics                                                                                                   |
+| 2             | <2023-09-14 Thu> | Supervised Learning I    | [Regression](2-Regression/README.md)                                                       | 5-8               | Least-squares, ANN after[AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/3-NeuralNetworks) |
+| 3             | <2023-09-21 Thu>  | Supervised learning II   | [Classification](4-Classification/README.md)                                               | 10-12             | Bayesian, parametric, non-parametric, CNNs                                                                                |
+| 4             | <2023-09-28 Thu> | Workshop I: Deployment   | [WebApp](3-Web-App/README.md), [gradio](https://gradio.app/), [streamlit](https://streamlit.io/) | 9,13              | Application to media                                                                                                      |
+| 5             | <2023-10-05 Thu> | Unsupervised Learning I  | [Clustering](5-Clustering/README.md) & Vizualization                                       | 14-15             | k-means, GMMs, PCA, autoencoder                                                                                           |
+| 6             | <2022-10-12 Thu> | Unsupervised Learning II | [Natural Language Processing](6-NLP/README.md)                                             | 16-20             | Context and application                                                                                                   |
+| 7             | <2022-10-19 Thu> | Time-series analysis     | [Time series](8-TimeSeries/README.md) / Ernests                                            | 21-23             | Application to media                                                                                                      |
+| 8             | <2022-10-26 Thu>  | Reinforcement Learning   | [Reinforcement learning](8-Reinforcement/README)                                           | 24,25             | Q-learning, Gym                                                                                                           |
+| 9             | <2022-11-02 Thu> | Workshop II: Deployment  | [ML in the Wild](9-Real-World/README.md), Mini-projects                                    |                   | Mini-projects                                                                                                             |
+|               |                   |                          |                                                                                         |                   |                                                                                                                           |
 
 ## Other Curricula
 
