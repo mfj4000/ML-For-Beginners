@@ -6,6 +6,10 @@
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/3/)
 
+[![ML for beginners - History of Machine Learning](https://camo.githubusercontent.com/9b23442d3976fa03bf4b798b3e4e0da7c3652b7484c7753553e6c159f5eb32c0/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4e3677784d34775a3756302f302e6a7067)](https://youtu.be/N6wxM4wZ7V0 "ML for beginners - History of Machine Learning")
+
+> 🎥 Click the image above for a short video working through this lesson.
+
 ---
 
 In this lesson, we will walk through the major milestones in the history of machine learning and artificial intelligence.
@@ -161,4 +165,4 @@ Here are items to watch and listen to:
 
 ## Assignment
 
-[Create a timeline](assignment.md)
+[Create a timeline](assignment.md): non-obligatory
