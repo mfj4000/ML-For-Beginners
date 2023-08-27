@@ -1,14 +1,11 @@
 # Introduction to machine learning
 
-<!--
-Watch the video, then take the pre-lesson quiz
--->
-
-[![ML, AI, deep learning - What's the difference?](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/lTd9RSxS9ZE "ML, AI, deep learning - What's the difference?")
-
-> 🎥 Click the image above for a video discussing the difference between machine learning, AI, and deep learning.
-
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/1/)
+
+
+[![ML for beginners - Introduction to Machine Learning for Beginners](https://camo.githubusercontent.com/136c13abf631b72f792dbe60bbe7f937ea4e618d2003a88fa1b06cb5c648e771/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f366d53785f4b4a786348492f302e6a7067)](https://youtu.be/6mSx_KJxcHI "ML for beginners - Introduction to Machine Learning for Beginners")
+
+> 🎥 Click the image above for a short video working through this lesson.
 
 ---
 
@@ -26,7 +23,7 @@ We want to create a launching spot for your ML study, respond to, and incorporat
 
 Before starting with this curriculum, you need to have your computer set up and ready to run notebooks locally.
 
-**Use package managers:** [Homebrew](https://brew.sh) for Mac, **[Chocolatey](https://chocolatey.org)** (or better [Windows Linux Subsytem (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install)) for Windows. 
+**Use package managers:** [Homebrew](https://brew.sh) for Mac, **[Chocolatey](https://chocolatey.org)** (or better [Windows Linux Subsytem (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install)) for Windows.
 
 **Configure your machine with these videos**. Use the following links to learn [how to install Python](https://youtu.be/CXZYvNRIAKM) in your system and [setup a text editor](https://youtu.be/EU8eayHWoZg) for development.
 
