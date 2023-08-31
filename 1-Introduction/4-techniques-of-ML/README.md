@@ -7,6 +7,10 @@ The process of building, using, and maintaining machine learning models and the 
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/7/)
 
+[![ML for beginners - Techniques of Machine Learning](https://camo.githubusercontent.com/b5ebd985550782f4bfd297c5354ab4959b0c05c4a41e95168cab5c08c2836398/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f344e474d3055325a5348552f302e6a7067)](https://youtu.be/4NGM0U2ZSHU "ML for beginners - Techniques of Machine Learning")
+
+> 🎥 Click the image above for a short video working through this lesson (4:06).
+
 ## Introduction
 
 On a high level, the craft of creating machine learning (ML) processes is comprised of a number of steps:
@@ -36,7 +40,7 @@ Before starting to build your model, there are several tasks you need to complet
 To be able to answer your question with any kind of certainty, you need a good amount of data of the right type. There are two things you need to do at this point:
 
 - **Collect data**. Keeping in mind the previous lesson on fairness in data analysis, collect your data with care. Be aware of the sources of this data, any inherent biases it might have, and document its origin.
-- **Prepare data**. There are several steps in the data preparation process. You might need to collate data and normalize it if it comes from diverse sources. You can improve the data's quality and quantity through various methods such as converting strings to numbers (as we do in [Clustering](../../5-Clustering/1-Visualize/README.md)). You might also generate new data, based on the original (as we do in [Classification](../../4-Classification/1-Introduction/README.md)). You can clean and edit the data (as we will prior to the [Web App](../../3-Web-App/README.md) lesson). Finally, you might also need to randomize it and shuffle it, depending on your training techniques.
+- **Prepare data**. There are several steps in the data preparation process. You might need to collate data and normalize it if it comes from diverse sources. You can improve the data's quality and quantity through various methods such as converting strings to numbers (as we do in [Clustering](../../5-Clustering/1-Visualize/README.md)). You might also generate new data, based on the original (as we do in [Classification](../../3-Classification/1-Introduction/README.md)). You can clean and edit the data (as we will prior to the [Web App](../..4-Web-App/README.md) lesson). Finally, you might also need to randomize it and shuffle it, depending on your training techniques.
 
 ✅ After collecting and processing your data, take a moment to see if its shape will allow you to address your intended question. It may be that the data will not perform well in your given task, as we discover in our [Clustering](../../5-Clustering/1-Visualize/README.md) lessons!
 
@@ -52,7 +56,7 @@ A target is a thing you are trying to predict. Target usually represented as `y`
 
 ### Visualize your data
 
-An important aspect of the data scientist's toolkit is the power to visualize data using several excellent libraries such as Seaborn or MatPlotLib. Representing your data visually might allow you to uncover hidden correlations that you can leverage. Your visualizations might also help you to uncover bias or unbalanced data (as we discover in [Classification](../../4-Classification/2-Classifiers-1/README.md)).
+An important aspect of the data scientist's toolkit is the power to visualize data using several excellent libraries such as Seaborn or MatPlotLib. Representing your data visually might allow you to uncover hidden correlations that you can leverage. Your visualizations might also help you to uncover bias or unbalanced data (as we discover in [Classification](../../3-Classification/2-Classifiers-1/README.md)).
 
 ### Split your dataset
 
@@ -90,7 +94,7 @@ In the context of machine learning, model fitting refers to the accuracy of the 
 
 ## Parameter tuning
 
-Once your initial training is complete, observe the quality of the model and consider improving it by tweaking its 'hyperparameters'. Read more about the process [in the documentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?WT.mc_id=academic-15963-cxa).
+Once your initial training is complete, observe the quality of the model and consider improving it by tweaking its 'hyperparameters'. Read more about the process [in the documentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?WT.mc_id=academic-77952-leestott).
 
 ## Prediction
 
