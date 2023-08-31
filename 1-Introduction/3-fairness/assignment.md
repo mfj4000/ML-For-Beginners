@@ -1,4 +1,4 @@
-# Explore Fairlearn
+# Explore Responsible AI Toolbox
 
 ## Instructions
 
