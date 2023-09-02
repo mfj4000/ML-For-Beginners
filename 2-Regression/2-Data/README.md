@@ -15,15 +15,15 @@ In this lesson, you will learn:
 - How to prepare your data for model-building.
 - How to use Matplotlib for data visualization.
 
-[![Preparing and Visualizing data](https://img.youtube.com/vi/11AnOn_OAcE/0.jpg)](https://youtu.be/11AnOn_OAcE "Preparing and Visualizing data video - Click to Watch!")
-
-> 🎥 Click the image above for a video covering key aspects of this lesson (18 minutes)
-
 ## Asking the right question of your data
 
 The question you need answered will determine what type of ML algorithms you will leverage. And the quality of the answer you get back will be heavily dependent on the nature of your data.
 
 Take a look at the [data](https://github.com/SMC-AAU-CPH/ML-For-Beginners/blob/main/2-Regression/data/US-pumpkins.csv) provided for this lesson. You can open this .csv file in VS Code. A quick skim immediately shows that there are blanks and a mix of strings and numeric data. There's also a strange column called 'Package' where the data is a mix between 'sacks', 'bins' and other values. The data, in fact, is a bit of a mess.
+
+[![ML for beginners - How to Analyze and Clean a Dataset](https://camo.githubusercontent.com/d11d9e38dc21249c176a65774933ff910bf72f646d7b1af68cbdb5a6cd44d063/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f3571476a637a57547244512f302e6a7067)](https://youtu.be/5qGjczWTrDQ "ML for beginners - How to Analyze and Clean a Dataset")
+
+> 🎥 Click the image above for a short video working through preparing the data for this lesson (3:22).
 
 In fact, it is not very common to be gifted a dataset that is completely ready to use to create a ML model out of the box. In this lesson, you will learn how to prepare a raw dataset using standard Python libraries. You will also learn various techniques to visualize the data.
 
@@ -70,11 +70,11 @@ Open the _notebook.ipynb_ file in Visual Studio Code and import the spreadsheet 
    ```
 
    There is missing data, but maybe it won't matter for the task at hand.
-3. To make your dataframe easier to work with, drop several of its columns, using `drop()`, keeping only the columns you need:
+3. To make your dataframe easier to work with, select only the columns you need, using the `loc` function which extracts from the original dataframe a group of rows (passed as first parameter) and columns (passed as second parameter). The expression `:` in the case below means "all rows".
 
    ```python
-   new_columns = ['Package', 'Month', 'Low Price', 'High Price', 'Date']
-   pumpkins = pumpkins.drop([c for c in pumpkins.columns if c not in new_columns], axis=1)
+   columns_to_select = ['Package', 'Low Price', 'High Price', 'Date']
+   pumpkins = pumpkins.loc[:, columns_to_select]
    ```
 
 ### Second, determine average price of pumpkin
@@ -138,6 +138,10 @@ Now, you can analyze the pricing per unit based on their bushel measurement. If 
 ## Visualization Strategies
 
 Part of the data scientist's role is to demonstrate the quality and nature of the data they are working with. To do this, they often create interesting visualizations, or plots, graphs, and charts, showing different aspects of data. In this way, they are able to visually show relationships and gaps that are otherwise hard to uncover.
+
+[![ML for beginners - How to Visualize Data with Matplotlib](https://camo.githubusercontent.com/69a852a0cbd03057156eeb337b871536106a876b931e9a251387869293e93897/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5362556b784836494a6f302f302e6a7067)](https://youtu.be/SbUkxH6IJo0 "ML for beginners - How to Visualize Data with Matplotlib")
+
+> 🎥 Click the image above for a short video working through visualizing the data for this lesson (3:40).
 
 Visualizations can also help determine the machine learning technique most appropriate for the data. A scatterplot that seems to follow a line, for example, indicates that the data is a good candidate for a linear regression exercise.
 

@@ -14,6 +14,10 @@ Now you are ready to dive deeper into regression for ML. While visualization all
 
 In this lesson, you will learn more about two types of regression: _basic linear regression_ and _polynomial regression_, along with some of the math underlying these techniques. Those models will allow us to predict pumpkin prices depending on different input data.
 
+[![ML for beginners - Understanding Linear Regression](https://camo.githubusercontent.com/5ef95a00d438efdb064b8b90eed8e49c8e606ff7ffb6356b00413eca60c21b7d/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4352784654386f54444d672f302e6a7067)](https://youtu.be/CRxFT8oTDMg "ML for beginners - Understanding Linear Regression")
+
+> 🎥 Click the image above for a short video overview of linear regression (2:53).
+
 > Throughout this curriculum, we assume minimal knowledge of math, and seek to make it accessible for students coming from other fields, so watch for notes, 🧮 callouts, diagrams, and other learning tools to aid in comprehension.
 
 ### Prerequisite
@@ -94,16 +98,24 @@ day_of_year = pd.to_datetime(pumpkins['Date']).apply(lambda dt: (dt-datetime(dt.
 
 Now that you have an understanding of the math behind linear regression, let's create a Regression model to see if we can predict which package of pumpkins will have the best pumpkin prices. Someone buying pumpkins for a holiday pumpkin patch might want this information to be able to optimize their purchases of pumpkin packages for the patch.
 
-## Looking for Correlation
+### Looking for Correlation
+
+[![ML for beginners - Looking for Correlation: The Key to Linear Regression](https://camo.githubusercontent.com/de752b6e48ac250e84b6984964584b46ce012f0884358aa41fafa614b07c66ce/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f756f52712d6c573265516f2f302e6a7067)](https://youtu.be/uoRq-lW2eQo "ML for beginners - Looking for Correlation: The Key to Linear Regression")
+
+> 🎥 Click the image above for a short video overview of correlation (3:35).
 
 From the previous lesson you have probably seen that the average price for different months looks like this:
 
 ![Average price by month](../2-Data/images/barchart.png)
 
-This suggests that there should be some correlation, and we can try training linear regression model to predict the relationship between `Month` and `Price`, or between `DayOfYear` and `Price`. Here is the scatter plot that shows the latter relationship:
+Let's see if there is a correlation using the `corr` function:
 
-![Scatter plot of Price vs. Day of Year](images/scatter-dayofyear.png)
-It looks like there are different clusters of prices corresponding to different pumpkin varieties. To confirm this hypothesis, let's plot each pumpkin category using a different color. By passing an `ax` parameter to the `scatter` plotting function we can plot all points on the same graph:
+```python
+print(new_pumpkins['Month'].corr(new_pumpkins['Price']))
+print(new_pumpkins['DayOfYear'].corr(new_pumpkins['Price']))
+```
+
+It looks like the correlation is pretty small, -0.15 by `Month` and -0.17 by the `DayOfMonth`, but there could be another important relationship. It looks like there are different clusters of prices corresponding to different pumpkin varieties. To confirm this hypothesis, let's plot each pumpkin category using a different color. By passing an `ax` parameter to the `scatter` plotting function we can plot all points on the same graph:
 
 ```python
 ax=None
@@ -113,9 +125,17 @@ for i,var in enumerate(new_pumpkins['Variety'].unique()):
     ax = df.plot.scatter('DayOfYear','Price',ax=ax,c=colors[i],label=var)
 ```
 
-`<img alt="Scatter plot of Price vs. Day of Year" src="images/scatter-dayofyear-color.png" width="50%" />`
+[![Scatter plot of Price vs. Day of Year](https://github.com/microsoft/ML-For-Beginners/raw/main/2-Regression/3-Linear/images/scatter-dayofyear-color.png)](https://github.com/microsoft/ML-For-Beginners/blob/main/2-Regression/3-Linear/images/scatter-dayofyear-color.png)
 
-Our investigation suggests that variety has more effect on the overall price than the actual selling date. So let us focus for the moment only on one pumpkin variety, and see what effect the date has on the price:
+Our investigation suggests that variety has more effect on the overall price than the actual selling date. We can see this with a bar graph:
+
+```python
+new_pumpkins.groupby('Variety')['Price'].mean().plot(kind='bar')
+```
+
+[![Bar graph of price vs variety](https://github.com/microsoft/ML-For-Beginners/raw/main/2-Regression/3-Linear/images/price-by-variety.png)](https://github.com/microsoft/ML-For-Beginners/blob/main/2-Regression/3-Linear/images/price-by-variety.png)
+
+Let us focus for the moment only on one pumpkin variety, and see what effect the date has on the price:
 
 ```python
 pie_pumpkins = new_pumpkins[new_pumpkins['Variety']=='PIE TYPE']
@@ -136,6 +156,10 @@ pie_pumpkins.info()
 Another approach would be to fill those empty values with mean values from the corresponding column.
 
 ## Simple Linear Regression
+
+[![ML for beginners - Linear and Polynomial Regression using Scikit-learn](https://camo.githubusercontent.com/c6863a36513da77c63d302b60d148a6cf32b5605fe957ef27acd3b0223cf9566/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6534635f55503266536a672f302e6a7067)](https://youtu.be/e4c_UP2fSjg "ML for beginners - Linear and Polynomial Regression using Scikit-learn")
+
+> 🎥 Click the image above for a short video overview of linear and polynomial regression (5:01).
 
 To train our Linear Regression model, we will use the **Scikit-learn** library.
 
@@ -196,7 +220,7 @@ plt.plot(X_test,pred)
 
 `<img alt="Linear regression" src="images/linear-results.png" width="50%" />`
 
-## Polynomial Regression
+### Polynomial Regression
 
 Another type of Linear Regression is Polynomial Regression. While sometimes there's a linear relationship between variables - the bigger the pumpkin in volume, the higher the price - sometimes these relationships can't be plotted as a plane or straight line.
 
@@ -234,6 +258,10 @@ Using Polynomial Regression, we can get slightly lower MSE and higher determinat
 ## Categorical Features
 
 In the ideal world, we want to be able to predict prices for different pumpkin varieties using the same model. However, the `Variety` column is somewhat different from columns like `Month`, because it contains non-numeric values. Such columns are called **categorical**.
+
+[![ML for beginners - Categorical Feature Predictions with Linear Regression](https://camo.githubusercontent.com/d4c7e429ae86ec1eeff65494a82ea2a53e2c501da2dc3f2c48fd86da372c0aec/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4459476c69696f494145302f302e6a7067)](https://youtu.be/DYGliioIAE0 "ML for beginners - Categorical Feature Predictions with Linear Regression")
+
+> 🎥 Click the image above for a short video overview of using categorical features (3:46).
 
 Here you can see how average price depends on variety:
 
