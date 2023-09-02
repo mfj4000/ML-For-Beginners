@@ -19,9 +19,9 @@ In this lesson, you will learn how to:
 
 ## Installations and configurations
 
-[![Setup Python with Visual Studio Code](https://img.youtube.com/vi/yyQM70vi7V8/0.jpg)](https://youtu.be/yyQM70vi7V8 "Setup Python with Visual Studio Code")
+[![ML for beginners - Setup your tools ready to build Machine Learning models](https://camo.githubusercontent.com/2adb048c84c7bbe4a1ab5aff6f4e90544f715d89791a7b3cf35ec07075ae8a1e/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f2d44666544326b324b6a302f302e6a7067)](https://youtu.be/-DfeD2k2Kj0 "ML for beginners -Setup your tools ready to build Machine Learning models")
 
-> 🎥 Click the image above for a video: using Python within VS Code.
+> 🎥 Click the image above for a short video working through configuring your computer for ML (5:04).
 
 1. **Install Python**. Ensure that [Python](https://www.python.org/downloads/) is installed on your computer. You will use Python for many data science and machine learning tasks. Most computer systems already include a Python installation. There are useful [Python Coding Packs](https://code.visualstudio.com/learn/educators/installers?WT.mc_id=academic-15963-cxa) available as well, to ease the setup for some users.
 
@@ -77,6 +77,10 @@ Scikit-learn makes it straightforward to build models and evaluate them for use.
 ## Exercise - your first Scikit-learn notebook
 
 > This tutorial was inspired by the [linear regression example](https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html#sphx-glr-auto-examples-linear-model-plot-ols-py) on Scikit-learn's web site.
+
+[![ML for beginners - Your First Linear Regression Project in Python](https://camo.githubusercontent.com/466658e16afdb080b4562f25939c0ff54dbf5562acc0e8281a0381e30e6729c0/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f32786b584c3545557053302f302e6a7067)](https://youtu.be/2xkXL5EUpS0 "ML for beginners - Your First Linear Regression Project in Python")
+
+> 🎥 Click the image above for a short video working through this exercise (4:10).
 
 In the _notebook.ipynb_ file associated to this lesson, clear out all the cells by pressing the 'trash can' icon.
 

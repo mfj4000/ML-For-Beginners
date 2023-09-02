@@ -18,6 +18,10 @@ The lessons in this section cover types of regression in the context of machine 
 
 In this series of lessons, you'll discover the differences between linear and logistic regression, and when you should prefer one over the other.
 
+[![ML for beginners - Introduction to Regression models for Machine Learning](https://camo.githubusercontent.com/58df89816f616d4d7ff27d83c17ee13459da0190651a22684999b368f2175f97/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5841334f616f57383652382f302e6a7067)](https://youtu.be/XA3OaoW86R8 "ML for beginners - Introduction to Regression models for Machine Learning")
+
+> 🎥 Click the image above for a short video introducing regression models (3:27).
+
 In this group of lessons, you will get set up to begin machine learning tasks, including configuring Visual Studio Code to manage notebooks, the common environment for data scientists. You will discover Scikit-learn, a library for machine learning, and you will build your first models, focusing on Regression models in this chapter.
 
 > There are useful low-code tools that can help you learn about working with regression models. Try [Azure ML for this task](https://docs.microsoft.com/learn/modules/create-regression-model-azure-machine-learning-designer/?WT.mc_id=academic-15963-cxa)
@@ -28,6 +32,7 @@ In this group of lessons, you will get set up to begin machine learning tasks, i
 2. [Managing data](2-Data/README.md)
 3. [Linear and polynomial regression](3-Linear/README.md)
 4. [Logistic regression](4-Logistic/README.md)
+5. [Neural Networks](A-NeuralNetworks/README.md)
 
 ⚠️ You may want to brush up your **🛠**[Foundations](https://madewithml.com/#foundations) on Pandas before entering.
 
