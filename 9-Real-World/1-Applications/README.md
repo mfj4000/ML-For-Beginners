@@ -160,4 +160,4 @@ The Wayfair data science team has several interesting videos on how they use ML 
 
 ## Assignment
 
-[A ML scavenger hunt](assignment.md)
+[A ML scavenger hunt](https://github.com/SMC-AAU-CPH)
