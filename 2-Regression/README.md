@@ -32,7 +32,6 @@ In this group of lessons, you will get set up to begin machine learning tasks, i
 2. [Managing data](2-Data/README.md)
 3. [Linear and polynomial regression](3-Linear/README.md)
 4. [Logistic regression](4-Logistic/README.md)
-5. [Neural Networks](A-NeuralNetworks/README.md)
 
 ⚠️ You may want to brush up your **🛠**[Foundations](https://madewithml.com/#foundations) on Pandas before entering.
 
