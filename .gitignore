@@ -358,4 +358,4 @@ MigrationBackup/
 /10-Workshop/E1-0-AgeClass/
 /10-Workshop/E1-1-age-classification/
 *.org
-*.ob-jupyter/*
+*ob-jupyter/
