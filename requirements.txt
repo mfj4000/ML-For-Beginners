@@ -9,3 +9,8 @@ pandas==1.5.3
 tqdm==4.64.0
 scikit-image==0.19.0
 skl2onnx==1.15.0
+pydantic==1.10.12 
+pycaret 
+gradio==3.44.4 
+fastcore==1.5.27 
+nbdev==2.3.12
