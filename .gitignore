@@ -359,3 +359,8 @@ MigrationBackup/
 /10-Workshop/E1-1-age-classification/
 *.org
 *ob-jupyter/
+*.onnx
+*.venv/
+*.ipynb_checkpoints/
+# Solution to Assignment 4
+5-Clustering/XP-with-tsne.ipynb
